@@ -1,1 +1,17 @@
-
+proxies:
+  - name: ASIA+VMESS-WS(2025-02-06)
+    server: asia1.fufo.org
+    port: 443
+    type: vmess
+    uuid: 15136bb0-de92-11ef-b438-205c6d5f5d78
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indihome.com
+    network: ws
+    ws-opts:
+      path: /vmws
+      headers:
+        Host: indihome.com
+    udp: true
